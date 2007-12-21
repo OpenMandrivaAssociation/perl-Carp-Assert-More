@@ -17,6 +17,7 @@ BuildRequires:	perl-devel
 BuildRequires:  perl-Carp-Assert
 BuildRequires:  perl-Test-Exception
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Carp::Assert::More is a set of wrappers around the Carp::Assert functions 
