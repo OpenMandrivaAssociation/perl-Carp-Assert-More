@@ -1,7 +1,7 @@
 %define module	Carp-Assert-More
 %define name	perl-%{module}
 %define version	1.12
-%define release	%mkrel 3
+%define release	%mkrel 5
 
 Name:		%{name}
 Version: 	%{version}
