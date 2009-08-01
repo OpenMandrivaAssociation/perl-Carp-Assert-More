@@ -1,30 +1,30 @@
-%define module	Carp-Assert-More
-%define name	perl-%{module}
-%define version	1.12
-%define release	%mkrel 5
+%define upstream_name	 Carp-Assert-More
+%define upstream_version 1.12
 
-Name:		%{name}
-Version: 	%{version}
-Release:	%{release}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:	Convenience wrappers around Carp::Assert module
-License: 	GPL or Artistic
+License: 	GPL+ or Artistic
 Group:		Development/Perl
-Source0:	http://search.cpan.org/CPAN/authors/id/P/PE/PETDANCE/%{module}-%{version}.tar.bz2
-Url:		http://search.cpan.org/dist/%{module}
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:	http://search.cpan.org/CPAN/authors/id/P/PE/PETDANCE/%{upstream_name}-%{upstream_version}.tar.bz2
+
 %if %{mdkversion} < 1010
 BuildRequires:	perl-devel
 %endif
 BuildRequires:  perl-Carp-Assert
 BuildRequires:  perl-Test-Exception
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Carp::Assert::More is a set of wrappers around the Carp::Assert functions 
 to make the habit of writing assertions even easier.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -45,5 +45,3 @@ rm -rf %{buildroot}
 %doc Changes README
 %{perl_vendorlib}/Carp
 %{_mandir}/man3/*
-
-
