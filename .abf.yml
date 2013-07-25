@@ -1,2 +1,4 @@
+removed_sources:
+  Carp-Assert-More-1.12.tar.bz2: 11ed3ccaa4d634d419c5b4be177114fde730e040
 sources:
-  "Carp-Assert-More-1.12.tar.bz2": 11ed3ccaa4d634d419c5b4be177114fde730e040
+  Carp-Assert-More-1.14.tar.gz: 0e590e8cd07f078da1512f55b1344fe58d0c6435
