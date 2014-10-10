@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 1.14
-Release:	1
+Release:	2
 
 Summary:	Convenience wrappers around Carp::Assert module
 License: 	GPL+ or Artistic
