@@ -1,15 +1,15 @@
 %define upstream_name	 Carp-Assert-More
-%define upstream_version 1.14
+%define upstream_version v2.9.0
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 1.14
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Convenience wrappers around Carp::Assert module
 License: 	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/authors/id/P/PE/PETDANCE/Carp-Assert-More-1.14.tar.gz
+Url:		https://github.com/petdance/carp-assert-more
+Source0:	https://cpan.metacpan.org/authors/id/P/PE/PETDANCE/Carp-Assert-More-2.9.0.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
